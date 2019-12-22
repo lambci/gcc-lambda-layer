@@ -3,4 +3,4 @@
 . ./config.sh
 
 docker run --rm -v "$PWD":/app lambci/yumda:2 sh -c \
-  "yum install -y ${YUM_PACKAGE} && cd /lambda/opt && zip -yr /app/layer.zip ."
+  "yum install -y ${YUM_PACKAGE} && cd /lambda/opt && zip -qyr /app/layer.zip ."
